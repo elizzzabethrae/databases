@@ -1,0 +1,39 @@
+1. What data types do these represent?
+		1. String
+		2. integer
+		3. object
+		4. float
+		5. object
+2. When would a database be used? When would a file be used?
+A database is used for data that is ever changing and needs to be manipulated regularly, while keeping the original data in tact. Files are good for static information, maybe posted to a website or referenced frequently, but not changed.
+	
+3. Difference between SQL and other programming languages.
+One difference is that SQL uses only `'` and only one `=` as opposed to two or three. SQL also saves all changes made each time the program is open, while other programs lose changes if a program runs and then closes.SQL also reads much like how people speak. To query, we basically ask a question.
+	
+4. Databases store information in binary form, so we as humans can't read it in its storage. We use SQL to 'translate' the data and let us manipulate, update, or change it. In its most basic form, data is stored in a table like structure, with rows, columns and values. 
+	
+5. Row= Represents a whole entry, or the complete conceptual unit. if it was a CRM, this would be the person itself. From the row you can see the columns of 'whats' we collected on a person.Table= how records are saved, this is the overarching structurecolumn= labels the 'what' of the information stored. If this is a CRM, it would be the name of individuals, their age, their contact info, etc. value=is a piece of information that the column name describes.
+	
+6. Three data types used in a tableString, integer, float.
+	
+7. Describe queries and provide results
+1. this query wants the date and purchase amount from the payments table. The thing is, they don't define info for a specific person or transaction, so it would return all purchase amounts and dates.
+		Date	Amount
+		5/1/2016	1500.00
+		5/10/2016	37.00
+		5/15/2016	124.93
+		5/23/2016	54.72
+2. This Query wants the amount of each transaction from the payments table, but only if it is above $500. Returns 1500.
+3. The * means select all, so it wants all the information from the payment table, but only for the payee 'Mega Foods'. 
+Would return: 
+5/15/2016	Mega Foods	124.93	Groceries
+		
+	
+
+8. Write SQL queries:
+1. SELECT sign up date, email
+FROM usersWHERE user = 'DeAndre Data'
+2. SELECT User IDFROM UsersWHERE email = 'aleesia.algorithm@uw.edu'
+3. SELECT *
+FROM users
+WHEN user ID = 4
